@@ -203,6 +203,10 @@ ol {
   padding-bottom: 32px;
 }
 
+.mobile-nav {
+  flex-grow: 2;
+}
+
 .mobile-nav .menu .active::after {
   display: none;
 }
@@ -752,7 +756,6 @@ ol {
 }
 
 .email-input {
-  width: 264px;
   height: 40px;
   color: var(--WHITE);
   font-size: 12px;
@@ -980,7 +983,11 @@ ol {
   }
 }
 
-@media (min-width: 480px) {
+@media (max-width: 480px) {
+.social-mobile .social-footer-list {
+    gap: 0px;
+    justify-content: space-between;
+}
 }
 
 @media (min-width: 768px) {
